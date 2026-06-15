@@ -5,112 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ubuntu Circle — I Am Because We Are</title>
+    <meta name="description" content="A Pan-African community platform turning youth dialogue into mentorship, funding, and measurable impact — starting in Nairobi, 2026." />
+    <link rel="icon" href="Ubuntu.jpeg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="sttyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- ═══ SPLASH SCREEN ═══════════════════════════════════════════════════════ -->
+    <!-- Splash -->
     <div id="splash">
         <div id="splash-inner">
-            <img src="/frontend/Ubuntu.jpeg" alt="Ubuntu Circle" id="splash-logo" />
+            <img src="Ubuntu.jpeg" alt="Ubuntu Circle" id="splash-logo" />
             <p id="splash-tag">Ubuntu &mdash; I am because we are.</p>
         </div>
     </div>
 
-    <!-- ═══ PLACEHOLDER OVERLAYS ════════════════════════════════════════════════ -->
-    <div class="ph-overlay" id="ph-who">
-        <button class="ph-back" onclick="closePH()">&#8592; Back</button>
-        <div class="ph-inner">
-            <div class="ph-icon">&#127757;</div>
-            <h1 class="ph-title">Who Are We</h1>
-            <div class="ph-divider"></div>
-            <p class="ph-sub">Ubuntu Circle is a Pan-African community platform that turns dialogue into action by
-                connecting young leaders, innovators, mentors, and funders across the continent.</p>
-            <div class="ph-grid">
-                <div class="ph-card">
-                    <h3>What is Ubuntu Circle?</h3>
-                    <p>A Pan-African community platform for young leaders, founders, and changemakers who want to shape
-                        solutions together — starting in Nairobi, growing continent-wide.</p>
-                </div>
-                <div class="ph-card">
-                    <h3>How are we building this?</h3>
-                    <p>We combine structured dialogue, curated solution showcases, mentorship, and grassroots
-                        collaboration into one accessible, rotating Pan-African gathering.</p>
-                </div>
-                <div class="ph-card">
-                    <h3>Why does this matter?</h3>
-                    <p>African youth-led ideas need visibility, trusted networks, and practical pathways from concept to
-                        impact. Conversation alone is not enough.</p>
-                </div>
-                <div class="ph-card">
-                    <h3>How do we sustain it?</h3>
-                    <p>By rotating across regions, building deep institutional partnerships, tracking measurable
-                        outcomes, and keeping community feedback at the centre of every decision.</p>
-                </div>
-            </div>
-            <div class="ph-team">
-                <div class="ph-team-card">
-                    <strong>Founder &amp; Programme Director</strong>
-                    <p>Becky Alek Malaak Ayuen &mdash; software engineer, competitive debater, and community builder
-                        with a deep commitment to African-led systems.</p>
-                </div>
-                <div class="ph-team-card">
-                    <strong>Partnerships &amp; Networks Lead</strong>
-                    <p>Connecting institutions, mentors, and investors with emerging African talent and impact projects
-                        across the continent.</p>
-                </div>
-                <div class="ph-team-card">
-                    <strong>Finance &amp; Operations Lead</strong>
-                    <p>Designing sustainable operations, funding pathways, and long-term impact support for the
-                        platform.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="ph-overlay" id="ph-projects">
-        <button class="ph-back" onclick="closePH()">&#8592; Back</button>
-        <div class="ph-inner">
-            <div class="ph-icon">&#128640;</div>
-            <h1 class="ph-title">Anticipate<br />Great Things.</h1>
-            <div class="ph-divider"></div>
-            <p class="ph-sub">Ubuntu Circle will showcase youth-led initiatives and connect them with mentors,
-                collaborators, and early-stage support. Our first cohorts will focus on climate resilience, community
-                health, digital inclusion, and entrepreneurship.</p>
-            <p class="ph-tagline">Solutions built by Africans, for Africa.</p>
-        </div>
-    </div>
-
-    <div class="ph-overlay" id="ph-contact">
-        <button class="ph-back" onclick="closePH()">&#8592; Back</button>
-        <div class="ph-inner">
-            <div class="ph-icon">&#128172;</div>
-            <h1 class="ph-title">Anticipate<br />Great Things.</h1>
-            <div class="ph-divider"></div>
-            <p class="ph-sub">Questions, partnership ideas, or platform feedback? Reach us at <strong
-                    class="gold-text">hello@theubuntucircle.org</strong> &mdash; full contact page coming soon.</p>
-            <p class="ph-tagline">Based in Nairobi, Kenya. Pan-African in spirit.</p>
-        </div>
-    </div>
-
-    <!-- ═══ NAV ══════════════════════════════════════════════════════════════════ -->
+    <!-- Nav -->
     <nav id="mainNav">
-        <div class="nav-logo">
-            <img src="/frontend/Ubuntu.jpeg" alt="Ubuntu Circle" />
+        <a href="index.html" class="nav-logo">
+            <img src="Ubuntu.jpeg" alt="Ubuntu Circle" />
             <span class="nav-logo-text">Ubuntu Circle</span>
-        </div>
+        </a>
         <div class="nav-right">
-            <button class="nav-link" onclick="openPH('ph-who')">Who Are We</button>
-            <button class="nav-link" onclick="openPH('ph-projects')">Projects</button>
-            <button class="nav-link" onclick="openPH('ph-contact')">Contact</button>
-            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">Dark</button>
-            <a href="#join" class="nav-join">Join</a>
+            <a href="index.html" class="nav-link" data-page="index.html">Home</a>
+            <a href="about.html" class="nav-link" data-page="about.html">About</a>
+            <a href="programs.html" class="nav-link" data-page="programs.html">What We Do</a>
+            <a href="roadmap.html" class="nav-link" data-page="roadmap.html">2026</a>
+            <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+            <a href="contact.html" class="nav-join">Join</a>
             <button class="hamburger" id="hbg" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
@@ -119,224 +44,156 @@
 
     <div class="nav-dropdown" id="navDrop">
         <ul>
-            <li><a href="#" onclick="openPH('ph-who');return false;">Who Are We</a></li>
-            <li><a href="#" onclick="openPH('ph-projects');return false;">Projects</a></li>
-            <li><a href="#" onclick="openPH('ph-contact');return false;">Contact</a></li>
-            <li><a href="#join" onclick="hbg.classList.remove('open'); navDrop.classList.remove('open');">Join the Circle</a></li>
+            <li><a href="index.html" onclick="closeNav()">Home</a></li>
+            <li><a href="about.html" onclick="closeNav()">About</a></li>
+            <li><a href="programs.html" onclick="closeNav()">What We Do</a></li>
+            <li><a href="roadmap.html" onclick="closeNav()">2026 Roadmap</a></li>
+            <li><a href="contact.html" onclick="closeNav()">Contact</a></li>
+            <li><a href="contact.html" onclick="closeNav()">Join the Circle</a></li>
         </ul>
     </div>
 
-    <!-- ═══ HERO ══════════════════════════════════════════════════════════════════ -->
-    <section class="hero" id="hero">
+    <!-- Hero -->
+    <section class="hero">
         <div class="hero-copy">
             <p class="eyebrow">Pan-African Community Platform &middot; Nairobi 2026</p>
             <h1 class="hero-headline">I am because<br /><em>we are.</em></h1>
-            <p class="hero-subtitle">A Pan-African platform turning youth dialogue into mentorship, funding, and
-                measurable impact — starting in Nairobi, growing continent-wide.</p>
+            <p class="hero-subtitle">A Pan-African platform turning youth dialogue into mentorship, funding, and measurable impact — starting in Nairobi, growing continent-wide.</p>
             <div class="pill-row">
                 <span class="pill">Dialogue</span>
                 <span class="pill">Collaboration</span>
                 <span class="pill">Mentorship</span>
-                <span class="pill">Funding</span>
-                <span class="pill">Impact</span>
+                <span class="pill">Showcase</span>
             </div>
             <div class="hero-ctas">
-                <a href="#join" class="btn-gold">Join the Circle</a>
-                <button class="btn-outline-light" onclick="openPH('ph-who')">Learn More</button>
+                <a href="contact.html" class="btn-primary">Join the Circle</a>
+                <a href="about.html" class="btn-outline">Learn More</a>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="hero-map-wrapper">
-                <div class="africa-float">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m50.98 38.804-.868-4.343 2.442-1.629a.953.953 0 0 0 .152-.125l3-3a1 1 0 0 0 .125-1.262l-1.678-2.518.74-1.48c.118-.237.138-.512.054-.764l-1-3a1 1 0 0 0-1.19-.653l-3.102.775-.708-2.122a1 1 0 0 0-.948-.684h-2.586l-1.27-1.271.804-2.413a1 1 0 0 0-.241-1.023l-1.562-1.563.804-2.413a1 1 0 0 0-.501-1.211l-2-1a.998.998 0 0 0-.689-.075L37 7.968l-3.758-.938a.999.999 0 0 0-.949.263L30.73 8.855l-1.729-.576V6c0-.379-.214-.725-.553-.895l-3.854-1.928L21.707.293A.997.997 0 0 0 21 0h-4c-.127 0-.253.024-.371.071l-5 2a1 1 0 0 0-.461.374L9.223 5.363l-1.93 1.93a.996.996 0 0 0-.241.391l-.869 2.607-1.63.814a1.009 1.009 0 0 0-.385.34l-1.945 2.918-1.93 1.93a.999.999 0 0 0-.241 1.023l1.868 5.606-.814 1.63a1.003 1.003 0 0 0-.054.764l1 3a1 1 0 0 0 .501.578l4 2c.321.16.704.136 1.002-.062L10.303 29h3.395l2.748 1.832c.22.147.488.199.751.148l3.311-.662-.455 1.365a.994.994 0 0 0 0 .633l1 3a.995.995 0 0 0 .706.653l3.418.854.765 3.06-1.835 3.669a1 1 0 0 0 0 .895l2 4c.019.037.039.073.062.107l1.832 2.748v3.697c0 .107.018.214.052.316l2 6c.07.211.209.393.394.516l3 2a.997.997 0 0 0 .871.116l3-1a1.01 1.01 0 0 0 .391-.241l1.93-1.93 2.918-1.945c.109-.073.204-.168.277-.277l2-3a1 1 0 0 0 .116-.871l-.907-2.724.817-3.271 3.589-1.794c.339-.17.553-.516.553-.895v-2.764l1.895-3.789c.1-.199.13-.426.086-.644zm-2.535-5.636a1.001 1.001 0 0 0-.426 1.028l.933 4.663-1.847 3.693a1.005 1.005 0 0 0-.105.447v2.382l-3.447 1.724a.998.998 0 0 0-.522.652l-1 4a.994.994 0 0 0 .021.559l.845 2.536-1.617 2.427-2.834 1.889a.953.953 0 0 0-.152.125l-1.833 1.833-2.312.771-2.308-1.538-1.84-5.521V51c0-.197-.059-.391-.168-.555l-1.966-2.948L26.119 44l1.776-3.553a.996.996 0 0 0 .075-.689l-1-4a.999.999 0 0 0-.728-.728l-3.467-.867L22.053 32l.895-2.684a1.003 1.003 0 0 0-.198-.979 1.005 1.005 0 0 0-.946-.318l-4.594.919-2.655-1.771a1.003 1.003 0 0 0-.555-.168h-4c-.197 0-.391.059-.555.168l-2.518 1.678-3.11-1.555-.737-2.214.814-1.63c.118-.237.138-.512.054-.764l-1.804-5.413 1.562-1.563a1 1 0 0 0 .125-.152l1.853-2.779 1.763-.881a1 1 0 0 0 .501-.578l.926-2.776 1.833-1.833a1 1 0 0 0 .125-.152l1.828-2.741 4.532-1.813h3.394l2.707 2.707c.076.076.164.14.26.188L27 6.62v2.382c0 .431.275.812.684.948l3 1a.997.997 0 0 0 1.023-.241l1.6-1.6 3.451.862a.968.968 0 0 0 .484 0l3.642-.91.894.447-.726 2.177a1 1 0 0 0 .241 1.023l1.562 1.563-.804 2.413a1 1 0 0 0 .241 1.023l2 2a.997.997 0 0 0 .707.293h2.279l.772 2.316a1 1 0 0 0 1.19.653l3.102-.775.576 1.729-.814 1.63c-.16.321-.137.703.062 1.002l1.545 2.318-2.35 2.35-2.918 1.945zM63.041 52.04l.907-2.724a.994.994 0 0 0 0-.633l-1-3a.994.994 0 0 0-.632-.632l-3-1a1 1 0 0 0-1.211.501l-1 2a1.005 1.005 0 0 0-.105.447v2.586l-1.707 1.707a.997.997 0 0 0-.293.707v1.586l-1.707 1.707a.997.997 0 0 0-.293.707v1.465l-2.555 1.703a1 1 0 0 0-.34 1.279l1 2a1 1 0 0 0 .578.501l3 1a.987.987 0 0 0 .763-.053l4-2c.193-.097.351-.254.447-.447l.928-1.854 2.885-2.886a.997.997 0 0 0 .263-.949l-.929-3.718zm-2.011.202.862 3.451-2.6 2.6c-.076.076-.14.164-.188.26l-.851 1.702-3.332 1.665-2.214-.737-.42-.84 2.266-1.511c.278-.186.445-.498.445-.832v-1.586l1.707-1.707a.997.997 0 0 0 .293-.707v-1.586l1.707-1.707a.997.997 0 0 0 .293-.707v-2.764l.507-1.014 1.702.568.737 2.209-.895 2.684a.985.985 0 0 0-.021.559z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
-                </div>
-                <div class="logo-centred">
-                    <img src="/frontend/Ubuntu.jpeg" alt="Ubuntu Circle logo" />
-                </div>
+            <div class="hero-image-stack">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Young people collaborating together" />
             </div>
-            <div class="stat-strip">
-                <div class="stat-pill"><span class="stat-n">54</span><span class="stat-l">Countries</span></div>
-                <div class="stat-pill"><span class="stat-n">1.4B</span><span class="stat-l">Young Africans</span></div>
-                <div class="stat-pill"><span class="stat-n">2026</span><span class="stat-l">Founded</span></div>
-            </div>
+            <div class="hero-badge">Nairobi &middot; 2026</div>
         </div>
     </section>
 
-    <!-- ═══ MISSION ═══════════════════════════════════════════════════════════════ -->
-    <section class="mission reveal" id="about">
-        <div class="mission-africa" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m50.98 38.804-.868-4.343 2.442-1.629a.953.953 0 0 0 .152-.125l3-3a1 1 0 0 0 .125-1.262l-1.678-2.518.74-1.48c.118-.237.138-.512.054-.764l-1-3a1 1 0 0 0-1.19-.653l-3.102.775-.708-2.122a1 1 0 0 0-.948-.684h-2.586l-1.27-1.271.804-2.413a1 1 0 0 0-.241-1.023l-1.562-1.563.804-2.413a1 1 0 0 0-.501-1.211l-2-1a.998.998 0 0 0-.689-.075L37 7.968l-3.758-.938a.999.999 0 0 0-.949.263L30.73 8.855l-1.729-.576V6c0-.379-.214-.725-.553-.895l-3.854-1.928L21.707.293A.997.997 0 0 0 21 0h-4c-.127 0-.253.024-.371.071l-5 2a1 1 0 0 0-.461.374L9.223 5.363l-1.93 1.93a.996.996 0 0 0-.241.391l-.869 2.607-1.63.814a1.009 1.009 0 0 0-.385.34l-1.945 2.918-1.93 1.93a.999.999 0 0 0-.241 1.023l1.868 5.606-.814 1.63a1.003 1.003 0 0 0-.054.764l1 3a1 1 0 0 0 .501.578l4 2c.321.16.704.136 1.002-.062L10.303 29h3.395l2.748 1.832c.22.147.488.199.751.148l3.311-.662-.455 1.365a.994.994 0 0 0 0 .633l1 3a.995.995 0 0 0 .706.653l3.418.854.765 3.06-1.835 3.669a1 1 0 0 0 0 .895l2 4c.019.037.039.073.062.107l1.832 2.748v3.697c0 .107.018.214.052.316l2 6c.07.211.209.393.394.516l3 2a.997.997 0 0 0 .871.116l3-1a1.01 1.01 0 0 0 .391-.241l1.93-1.93 2.918-1.945c.109-.073.204-.168.277-.277l2-3a1 1 0 0 0 .116-.871l-.907-2.724.817-3.271 3.589-1.794c.339-.17.553-.516.553-.895v-2.764l1.895-3.789c.1-.199.13-.426.086-.644zm-2.535-5.636a1.001 1.001 0 0 0-.426 1.028l.933 4.663-1.847 3.693a1.005 1.005 0 0 0-.105.447v2.382l-3.447 1.724a.998.998 0 0 0-.522.652l-1 4a.994.994 0 0 0 .021.559l.845 2.536-1.617 2.427-2.834 1.889a.953.953 0 0 0-.152.125l-1.833 1.833-2.312.771-2.308-1.538-1.84-5.521V51c0-.197-.059-.391-.168-.555l-1.966-2.948L26.119 44l1.776-3.553a.996.996 0 0 0 .075-.689l-1-4a.999.999 0 0 0-.728-.728l-3.467-.867L22.053 32l.895-2.684a1.003 1.003 0 0 0-.198-.979 1.005 1.005 0 0 0-.946-.318l-4.594.919-2.655-1.771a1.003 1.003 0 0 0-.555-.168h-4c-.197 0-.391.059-.555.168l-2.518 1.678-3.11-1.555-.737-2.214.814-1.63c.118-.237.138-.512.054-.764l-1.804-5.413 1.562-1.563a1 1 0 0 0 .125-.152l1.853-2.779 1.763-.881a1 1 0 0 0 .501-.578l.926-2.776 1.833-1.833a1 1 0 0 0 .125-.152l1.828-2.741 4.532-1.813h3.394l2.707 2.707c.076.076.164.14.26.188L27 6.62v2.382c0 .431.275.812.684.948l3 1a.997.997 0 0 0 1.023-.241l1.6-1.6 3.451.862a.968.968 0 0 0 .484 0l3.642-.91.894.447-.726 2.177a1 1 0 0 0 .241 1.023l1.562 1.563-.804 2.413a1 1 0 0 0 .241 1.023l2 2a.997.997 0 0 0 .707.293h2.279l.772 2.316a1 1 0 0 0 1.19.653l3.102-.775.576 1.729-.814 1.63c-.16.321-.137.703.062 1.002l1.545 2.318-2.35 2.35-2.918 1.945zM63.041 52.04l.907-2.724a.994.994 0 0 0 0-.633l-1-3a.994.994 0 0 0-.632-.632l-3-1a1 1 0 0 0-1.211.501l-1 2a1.005 1.005 0 0 0-.105.447v2.586l-1.707 1.707a.997.997 0 0 0-.293.707v1.586l-1.707 1.707a.997.997 0 0 0-.293.707v1.465l-2.555 1.703a1 1 0 0 0-.34 1.279l1 2a1 1 0 0 0 .578.501l3 1a.987.987 0 0 0 .763-.053l4-2c.193-.097.351-.254.447-.447l.928-1.854 2.885-2.886a.997.997 0 0 0 .263-.949l-.929-3.718zm-2.011.202.862 3.451-2.6 2.6c-.076.076-.14.164-.188.26l-.851 1.702-3.332 1.665-2.214-.737-.42-.84 2.266-1.511c.278-.186.445-.498.445-.832v-1.586l1.707-1.707a.997.997 0 0 0 .293-.707v-1.586l1.707-1.707a.997.997 0 0 0 .293-.707v-2.764l.507-1.014 1.702.568.737 2.209-.895 2.684a.985.985 0 0 0-.021.559z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg></div>
-        <div class="mission-content">
-            <p class="sec-eyebrow">Our Mission</p>
-            <h2 class="sec-title">Turning dialogue<br />into development.</h2>
-            <p class="sec-body">The Ubuntu Circle bridges the gap between African youth who have identified the
-                continent&rsquo;s most urgent problems and the ecosystems that can help them solve those problems.</p>
-            <div class="mission-grid">
-                <div class="m-card">
-                    <div class="m-icon">&#128483;&#65039;</div>
-                    <h3 class="m-title">Amplify Voices</h3>
-                    <p class="m-body">Structured, facilitated dialogue spaces where African youth engage with climate,
-                        mental health, conflict, and governance — and leave with more than just a conversation.</p>
+    <!-- At a glance -->
+    <section class="section">
+        <div class="container">
+            <div class="glance-row reveal">
+                <div class="glance-item">
+                    <span class="glance-n">2026</span>
+                    <span class="glance-l">Founded</span>
                 </div>
-                <div class="m-card">
-                    <div class="m-icon">&#127807;</div>
-                    <h3 class="m-title">Grow Solutions</h3>
-                    <p class="m-body">Validation frameworks, mentorship, peer collaboration, and pathways to investment.
-                        African solutions built by Africans, funded by believers in the continent&rsquo;s future.</p>
+                <div class="glance-item">
+                    <span class="glance-n">Nairobi</span>
+                    <span class="glance-l">Based In</span>
                 </div>
-                <div class="m-card">
-                    <div class="m-icon">&#129309;</div>
-                    <h3 class="m-title">Build the Network</h3>
-                    <p class="m-body">Lasting connections between founders, activists, investors, and institutions.
-                        Every event plants roots that grow long after the conference ends.</p>
+                <div class="glance-item">
+                    <span class="glance-n">2</span>
+                    <span class="glance-l">Core Tracks</span>
                 </div>
-                <div class="m-card">
-                    <div class="m-icon">&#128202;</div>
-                    <h3 class="m-title">Create the Data Layer</h3>
-                    <p class="m-body">Every founder in our pipeline contributes to an emerging African startup
-                        intelligence database — giving investors the signals to fund the next generation.</p>
+                <div class="glance-item">
+                    <span class="glance-n">5</span>
+                    <span class="glance-l">Focus Themes</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ PROBLEM ════════════════════════════════════════════════════════════════ -->
-    <section class="problem reveal" id="problem">
-        <div class="problem-left">
-            <p class="sec-eyebrow">The Problem</p>
-            <h2 class="sec-title">The solutions exist.<br />The infrastructure doesn&rsquo;t.</h2>
-            <p class="sec-body">Pan-African dialogue has flourished. What has not kept pace is a structured pathway from
-                conversation to action.</p>
-            <div class="gap-list">
-                <div class="gap-item"><span class="gap-n">01</span>
-                    <div><strong class="gap-t">Dialogue without direction</strong>
-                        <p class="gap-b">Conferences end. Energy dissipates. The Ubuntu Circle creates outcomes, not
-                            just conversations.</p>
+    <!-- Problem teaser -->
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="grid-2 reveal">
+                <div>
+                    <p class="eyebrow">The Problem</p>
+                    <h2 class="sec-title">The solutions exist.<br />The infrastructure doesn&rsquo;t.</h2>
+                    <p class="sec-body">African youth hold both the problems and the solutions — but lack structured pathways from conversation to collaboration, and from ideas to investable ventures.</p>
+                    <div class="gap-list">
+                        <div class="gap-item">
+                            <span class="gap-n">01</span>
+                            <div>
+                                <strong class="gap-t">Dialogue without direction</strong>
+                                <p class="gap-b">Conferences end. Energy dissipates. Ubuntu Circle creates outcomes, not just conversations.</p>
+                            </div>
+                        </div>
+                        <div class="gap-item">
+                            <span class="gap-n">02</span>
+                            <div>
+                                <strong class="gap-t">Solutions without visibility</strong>
+                                <p class="gap-b">Early-stage founders outside major hubs have no reliable channel to reach investors or collaborators.</p>
+                            </div>
+                        </div>
+                        <div class="gap-item">
+                            <span class="gap-n">03</span>
+                            <div>
+                                <strong class="gap-t">Ecosystems without data</strong>
+                                <p class="gap-b">Investors lack aggregated intelligence about what is being built, by whom, and where.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="gap-item"><span class="gap-n">02</span>
-                    <div><strong class="gap-t">Solutions without visibility</strong>
-                        <p class="gap-b">Early-stage founders outside major hubs have no reliable channel to reach
-                            investors or collaborators.</p>
-                    </div>
-                </div>
-                <div class="gap-item"><span class="gap-n">03</span>
-                    <div><strong class="gap-t">Ecosystems without data</strong>
-                        <p class="gap-b">Investors lack aggregated intelligence about what is being built, by whom, and
-                            where on the continent.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="problem-right">
-            <div class="quote-block">
-                <span class="quote-mark">&ldquo;</span>
-                <blockquote>African youth have the solutions. What they rarely have is a space where dialogue converts
-                    into action and ideas meet the people who can help them grow.</blockquote>
-                <cite>&mdash; Ubuntu Circle, Founding Vision 2026</cite>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══ WHAT WE DO ════════════════════════════════════════════════════════════ -->
-    <section class="what reveal" id="what-we-do">
-        <div class="what-header">
-            <p class="sec-eyebrow">What We Do</p>
-            <h2 class="sec-title">Two tracks. One mission.</h2>
-            <p class="sec-body">Dialogue and enterprise, together — so every conversation about a problem creates a
-                pathway to solving it.</p>
-        </div>
-        <div class="tracks">
-            <div class="track-card t-green">
-                <div class="t-icon">&#128483;&#65039;</div>
-                <h3 class="t-title">Dialogue Platform</h3>
-                <p class="t-body">In-person and digital community engaging with climate resilience, mental health,
-                    conflict, governance, and economic exclusion. Facilitated. Outcome-oriented.</p>
-            </div>
-            <div class="track-card t-gold">
-                <div class="t-icon">&#128161;</div>
-                <h3 class="t-title">Solutions Showcase</h3>
-                <p class="t-body">Each gathering culminates in a curated showcase connecting youth-led ventures with
-                    investors, corporates, and ecosystem builders. Not a pitch night — a structured introduction.</p>
-            </div>
-            <div class="track-card t-rust">
-                <div class="t-icon">&#129309;</div>
-                <h3 class="t-title">Workshops</h3>
-                <p class="t-body">Facilitated sessions on conflict resolution, climate adaptation, community building,
-                    and mental health — frameworks communities keep using long after the event ends.</p>
-            </div>
-            <div class="track-card t-brown">
-                <div class="t-icon">&#127757;</div>
-                <h3 class="t-title">Rotating Across Africa</h3>
-                <p class="t-body">Starting Nairobi 2026. Then rotating East, West, North, South — so African solutions
-                    are discovered, developed, and celebrated in every region.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══ TIMELINE ══════════════════════════════════════════════════════════════ -->
-    <section class="timeline-sec reveal" id="milestones">
-        <p class="sec-eyebrow">2026 Roadmap</p>
-        <h2 class="sec-title">One excellent founding year.</h2>
-        <p class="sec-body">Building deliberately. One strong proof-of-concept in Nairobi generates the credibility for
-            everything that follows.</p>
-        <div class="timeline">
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-month">Jun 2026</div>
-                <div class="tl-content"><strong>Foundation &amp; Identity</strong>
-                    <p>Website live, social channels launched, core team confirmed, founding vision published.</p>
-                </div>
-            </div>
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-month">Jul 2026</div>
-                <div class="tl-content"><strong>Content Engine</strong>
-                    <p>Original content published, community seeded to 200+ followers, first partnerships opened.</p>
-                </div>
-            </div>
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-month">Aug 2026</div>
-                <div class="tl-content"><strong>Partnerships Secured</strong>
-                    <p>2&ndash;3 institutional partners confirmed. Venue, agenda, and speaker pipeline finalised.</p>
-                </div>
-            </div>
-            <div class="tl-item">
-                <div class="tl-dot active"></div>
-                <div class="tl-month">Sep&ndash;Oct 2026</div>
-                <div class="tl-content"><strong>Founding Conference, Nairobi</strong>
-                    <p>Dialogue workshops in the morning. Solutions showcase in the afternoon. The first Circle.</p>
-                </div>
-            </div>
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-month">Nov 2026</div>
-                <div class="tl-content"><strong>Impact Report &amp; 2027 Plan</strong>
-                    <p>Outcomes published. Funding proposals for 2027 drafted. Next country selected.</p>
+                <div class="quote-block">
+                    <blockquote>African youth have the solutions. What they rarely have is a space where dialogue converts into action and ideas meet the people who can help them grow.</blockquote>
+                    <cite>&mdash; Ubuntu Circle, Founding Vision 2026</cite>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ JOIN ═══════════════════════════════════════════════════════════════════ -->
-    <section class="join reveal" id="join">
-        <p class="sec-eyebrow">Join the Circle</p>
-        <h2 class="sec-title">Be part of the founding community.</h2>
-        <p class="join-body">Whether you are a young African with solutions to share, an investor looking to engage the
-            next generation of builders, or an organisation aligned with our mission &mdash; there is a place for you.
-        </p>
-        <div class="join-form">
-            <input type="email" id="emailInput" placeholder="Your email address" />
-            <button class="btn-join" onclick="handleSignup()">Stay Updated</button>
+    <!-- Two tracks preview -->
+    <section class="section">
+        <div class="container">
+            <div class="reveal" style="text-align:center; margin-bottom:40px;">
+                <p class="eyebrow">What We Do</p>
+                <h2 class="sec-title">Two tracks. One mission.</h2>
+                <p class="sec-body" style="margin-inline:auto;">Dialogue and enterprise, together — so every conversation about a problem creates a pathway to solving it.</p>
+            </div>
+            <div class="grid-2 reveal-stagger">
+                <div class="track-card t-green">
+                    <div class="card-icon"><i data-lucide="messages-square" aria-hidden="true"></i></div>
+                    <h3 class="card-title">Dialogue Platform</h3>
+                    <p class="card-body">Digital and in-person community engaging with climate, mental health, conflict, governance, and entrepreneurship. Facilitated and outcome-oriented.</p>
+                    <a href="programs.html" class="btn-outline" style="margin-top:20px; border-color:rgba(255,255,255,0.5); color:#fff;">Learn more &rarr;</a>
+                </div>
+                <div class="track-card t-accent">
+                    <div class="card-icon"><i data-lucide="presentation" aria-hidden="true"></i></div>
+                    <h3 class="card-title">Solutions Showcase</h3>
+                    <p class="card-body">Curated meetings between youth-led ventures and investors, corporates, and ecosystem builders. Not a pitch night — a structured introduction.</p>
+                    <a href="programs.html" class="btn-outline" style="margin-top:20px; border-color:rgba(255,255,255,0.5); color:#fff;">Learn more &rarr;</a>
+                </div>
+            </div>
         </div>
-        <p class="ubuntu-tagline">Ubuntu &mdash; I am because we are.</p>
     </section>
 
-    <!-- ═══ FOOTER ════════════════════════════════════════════════════════════════ -->
+    <!-- Roadmap teaser -->
+    <section class="section">
+        <div class="container reveal">
+            <div class="cta-block">
+                <p class="eyebrow" style="color:rgba(255,255,255,0.7);">2026 Roadmap</p>
+                <h2 class="sec-title">One excellent founding year.</h2>
+                <p class="sec-body">Building deliberately. One strong proof-of-concept in Nairobi generates the credibility for everything that follows — culminating in our founding conference, Sep&ndash;Oct 2026.</p>
+                <a href="roadmap.html" class="btn-primary">View Full Roadmap</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join CTA -->
+    <section class="section">
+        <div class="container reveal" style="text-align:center;">
+            <p class="eyebrow">Join the Circle</p>
+            <h2 class="sec-title">Be part of the founding community.</h2>
+            <p class="sec-body" style="margin-inline:auto; margin-bottom:28px;">Whether you are a young African with solutions to share, an investor, or an organisation aligned with our mission — there is a place for you.</p>
+            <a href="contact.html" class="btn-primary btn-green">Stay Updated</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-top">
             <div class="footer-brand">
-                <img src="/frontend/Ubuntu.jpeg" alt="Ubuntu Circle" />
+                <img src="Ubuntu.jpeg" alt="Ubuntu Circle" />
                 <div>
                     <p class="footer-name">Ubuntu Circle</p>
                     <p class="footer-tagline">Collective dialogue for African development.</p>
@@ -344,36 +201,38 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Navigate</p>
-                <a href="#about">Mission</a>
-                <a href="#what-we-do">What We Do</a>
-                <a href="#milestones">2026 Roadmap</a>
-                <a href="#join">Join Us</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="programs.html">What We Do</a>
+                <a href="roadmap.html">2026 Roadmap</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Get Involved</p>
-                <a href="#" onclick="openPH('ph-who');return false;">Who Are We</a>
-                <a href="#" onclick="openPH('ph-projects');return false;">Partner With Us</a>
-                <a href="#" onclick="openPH('ph-contact');return false;">Contact</a>
+                <a href="contact.html">Join Us</a>
+                <a href="contact.html">Partner With Us</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Follow Us</p>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter / X</a>
+                <a href="#" aria-label="Instagram (coming soon)">Instagram</a>
+                <a href="#" aria-label="LinkedIn (coming soon)">LinkedIn</a>
+                <a href="#" aria-label="Twitter / X (coming soon)">Twitter / X</a>
                 <p class="footer-col-title" style="margin-top:14px">Based In</p>
-                <a href="#">Nairobi, Kenya</a>
+                <a href="contact.html">Nairobi, Kenya</a>
             </div>
         </div>
         <div class="footer-bottom">
             <p class="footer-copy">&copy; 2026 The Ubuntu Circle. All rights reserved.</p>
             <div class="footer-social">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter / X</a>
+                <a href="#" aria-label="Instagram (coming soon)"><i data-lucide="instagram" aria-hidden="true"></i> Instagram</a>
+                <a href="#" aria-label="LinkedIn (coming soon)"><i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a href="#" aria-label="Twitter / X (coming soon)"><i data-lucide="twitter" aria-hidden="true"></i> Twitter / X</a>
             </div>
         </div>
+        <div class="footer-pattern"></div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="main.js"></script>
 </body>
 
