@@ -85,12 +85,14 @@ button {
     justify-content: center;
     flex-direction: column;
     pointer-events: none;
-    transition: opacity 0.7s ease 2.4s, visibility 0.7s ease 2.4s;
+    opacity: 1;
+    transition: opacity 0.7s ease;
 }
 
 #splash.gone {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
 }
 
 #splash-inner {

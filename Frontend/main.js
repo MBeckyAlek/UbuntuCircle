@@ -2,10 +2,15 @@
 window.addEventListener('load', () => {
     const splash = document.getElementById('splash');
     if (!splash) return;
-    // Gone after CSS transition (opacity delay 2.4s + 0.7s = ~3.1s)
-    setTimeout(() => splash.classList.add('gone'), 2400);
-    // Remove from DOM after fade
-    setTimeout(() => splash.remove(), 3200);
+    setTimeout(() => {
+        splash.classList.add('gone');
+        const cleanup = () => {
+            splash.remove();
+            splash.removeEventListener('transitionend', cleanup);
+        };
+        splash.addEventListener('transitionend', cleanup);
+        setTimeout(cleanup, 1200);
+    }, 2400);
 });
 
 /* ── Hamburger nav ──────────────────────────────────────────────── */
