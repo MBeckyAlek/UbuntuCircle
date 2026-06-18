@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ubuntu Circle — I Am Because We Are</title>
+    <link rel="icon" href="/media/Ubuntu.jpeg" type="image/jpeg" />
     <meta name="description" content="A Pan-African community platform turning youth dialogue into mentorship, funding, and measurable impact — starting in Nairobi, 2026." />
-    <link rel="icon" href="Ubuntu.jpeg" type="image/jpeg" />
+    <link rel="icon" href="/media/Ubuntu.jpeg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,7 +19,7 @@
     <!-- Splash -->
     <div id="splash">
         <div id="splash-inner">
-            <img src="Ubuntu.jpeg" alt="Ubuntu Circle" id="splash-logo" />
+            <img src="/media/Ubuntu.jpeg" alt="Ubuntu Circle" id="splash-logo" />
             <p id="splash-tag">Ubuntu &mdash; I am because we are.</p>
         </div>
     </div>
@@ -26,7 +27,7 @@
     <!-- Nav -->
     <nav id="mainNav">
         <a href="index.html" class="nav-logo">
-            <img src="Ubuntu.jpeg" alt="Ubuntu Circle" />
+            <img src="/media/Ubuntu.jpeg" alt="Ubuntu Circle" />
             <span class="nav-logo-text">Ubuntu Circle</span>
         </a>
         <div class="nav-right">
@@ -72,7 +73,7 @@
         </div>
         <div class="hero-visual">
             <div class="hero-image-stack">
-                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Young people collaborating together" />
+                <img src="/media/IMG-20260616-WA0021.jpg" alt="Young people collaborating together" />
             </div>
             <div class="hero-badge">Nairobi &middot; 2026</div>
         </div>
@@ -170,7 +171,13 @@
     <!-- Roadmap teaser -->
     <section class="section">
         <div class="container reveal">
-            <div class="cta-block">
+            <div class="cta-block" style="position:relative; background:#301E14; overflow:hidden;">
+                <img 
+                    src="/media/IMG-20260616-WA0021.jpg" 
+                    alt="" 
+                    aria-hidden="true"
+                    style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.35; z-index:0; pointer-events:none;"
+                />
                 <p class="eyebrow" style="color:rgba(255,255,255,0.7);">2026 Roadmap</p>
                 <h2 class="sec-title">One excellent founding year.</h2>
                 <p class="sec-body">Building deliberately. One strong proof-of-concept in Nairobi generates the credibility for everything that follows — culminating in our founding conference, Sep&ndash;Oct 2026.</p>
@@ -193,7 +200,7 @@
     <footer>
         <div class="footer-top">
             <div class="footer-brand">
-                <img src="Ubuntu.jpeg" alt="Ubuntu Circle" />
+                <img src="/media/Ubuntu.jpeg" alt="Ubuntu Circle" />
                 <div>
                     <p class="footer-name">Ubuntu Circle</p>
                     <p class="footer-tagline">Collective dialogue for African development.</p>
@@ -212,11 +219,14 @@
                 <a href="contact.html">Partner With Us</a>
                 <a href="contact.html">Contact</a>
             </div>
+
             <div class="footer-col">
                 <p class="footer-col-title">Follow Us</p>
-                <a href="#" aria-label="Instagram (coming soon)">Instagram</a>
-                <a href="#" aria-label="LinkedIn (coming soon)">LinkedIn</a>
-                <a href="#" aria-label="Twitter / X (coming soon)">Twitter / X</a>
+                <a href="https://www.instagram.com/ubuntucircle0/" aria-label="Instagram" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/ubuntucircle0" aria-label="Facebook" target="_blank"><i data-lucide="facebook" aria-hidden="true"></i> Facebook</a>
+                <a href="https://www.youtube.com/@UbuntuCircle0" aria-label="YouTube" target="_blank"><i data-lucide="youtube" aria-hidden="true"></i> YouTube</a>
+                <a href="https://x.com/UbuntuCircle0" aria-label="Twitter / X" target="_blank">Twitter / X</a>
+                <a href="https://www.tiktok.com/@ubuntucircle0" aria-label="TikTok" target="_blank"><i data-lucide="tiktok" aria-hidden="true"></i> TikTok</a>
                 <p class="footer-col-title" style="margin-top:14px">Based In</p>
                 <a href="contact.html">Nairobi, Kenya</a>
             </div>
@@ -224,9 +234,12 @@
         <div class="footer-bottom">
             <p class="footer-copy">&copy; 2026 The Ubuntu Circle. All rights reserved.</p>
             <div class="footer-social">
-                <a href="#" aria-label="Instagram (coming soon)"><i data-lucide="instagram" aria-hidden="true"></i> Instagram</a>
-                <a href="#" aria-label="LinkedIn (coming soon)"><i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn</a>
-                <a href="#" aria-label="Twitter / X (coming soon)"><i data-lucide="twitter" aria-hidden="true"></i> Twitter / X</a>
+                <a href="https://www.instagram.com/ubuntucircle0/" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true" target="_blank"></i> Instagram</a>
+                <a href="https://www.facebook.com/ubuntucircle0" aria-label="Facebook"><i data-lucide="facebook" aria-hidden="true" target="_blank"></i> Facebook</a>
+                <a href="https://www.youtube.com/@UbuntuCircle0" aria-label="YouTube"><i data-lucide="youtube" aria-hidden="true" target="_blank"></i> YouTube</a>
+                <a href="https://x.com/UbuntuCircle0" aria-label="Twitter / X"><i data-lucide="twitter" aria-hidden="true" target="_blank"></i> Twitter / X</a>
+                <a href="https://www.tiktok.com/@ubuntucircle0" aria-label="TikTok"><i data-lucide="tiktok" aria-hidden="true" target="_blank"></i> TikTok</a>
+                <a href="mailto:ubuntucircle0@gmail.com" aria-label="Email"><i data-lucide="mail" aria-hidden="true" target="_blank"></i> Email</a>
             </div>
         </div>
         <div class="footer-pattern"></div>
